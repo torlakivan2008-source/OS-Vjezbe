@@ -1,0 +1,14 @@
+ivan@IT-Linux:~/Documents/os-vjezbe$ cp -rv data/. backup/
+'data/./zadaca.js' -> 'backup/./zadaca.js'
+'data/./salabahter.txt' -> 'backup/./salabahter.txt'
+'data/./prezentacija.odp' -> 'backup/./prezentacija.odp'
+'data/./.skriveni_dokument.exe' -> 'backup/./.skriveni_dokument.exe'
+
+ivan@IT-Linux:~/Documents/os-vjezbe$ cd data
+
+ivan@IT-Linux:~/Documents/os-vjezbe/data$ ls ../backup -lAs
+total 16
+16 -rw-rw-r-- 1 ivan ivan 13168 Mar 22 19:05 prezentacija.odp
+ 0 -rw-rw-r-- 1 ivan ivan     0 Mar 22 19:05 salabahter.txt
+ 0 -rw-rw-r-- 1 ivan ivan     0 Mar 22 19:05 .skriveni_dokument.exe
+ 0 -rw-rw-r-- 1 ivan ivan     0 Mar 22 19:05 zadaca.js
