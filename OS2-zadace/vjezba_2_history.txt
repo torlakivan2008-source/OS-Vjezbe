@@ -1,0 +1,60 @@
+--- Zadatak 3 ---
+ivan@IT-Linux:~/Documents/os-vjezbe$ cp -rv data/. backup/
+'data/./zadaca.js' -> 'backup/./zadaca.js'
+'data/./salabahter.txt' -> 'backup/./salabahter.txt'
+'data/./prezentacija.odp' -> 'backup/./prezentacija.odp'
+'data/./.skriveni_dokument.exe' -> 'backup/./.skriveni_dokument.exe'
+
+ivan@IT-Linux:~/Documents/os-vjezbe$ cd data
+
+ivan@IT-Linux:~/Documents/os-vjezbe/data$ ls ../backup -lAs
+total 16
+16 -rw-rw-r-- 1 ivan ivan 13168 Mar 22 19:05 prezentacija.odp
+ 0 -rw-rw-r-- 1 ivan ivan     0 Mar 22 19:05 salabahter.txt
+ 0 -rw-rw-r-- 1 ivan ivan     0 Mar 22 19:05 .skriveni_dokument.exe
+ 0 -rw-rw-r-- 1 ivan ivan     0 Mar 22 19:05 zadaca.js
+
+--- Zadatak 5 ---
+ivan@IT-Linux:~$ cd Documents/os-vjezbe/
+
+ivan@IT-Linux:~/Documents/os-vjezbe$ ls -las .
+total 32
+4 drwxrwxr-x 7 ivan ivan 4096 Mar 22 19:13 .
+4 drwxr-xr-x 7 ivan ivan 4096 Mar 22 18:50 ..
+4 drwxrwxr-x 2 ivan ivan 4096 Mar 22 19:05 backup
+4 drwxrwxr-x 2 ivan ivan 4096 Mar 22 18:52 data
+0 -rw-rw-r-- 1 ivan ivan    0 Mar 13 11:20 .programiranje.md
+4 drwxrwxr-x 2 ivan ivan 4096 Mar 13 11:39 vjezba1
+4 drwxrwxr-x 2 ivan ivan 4096 Mar 20 10:47 vjezba2
+4 drwxrwxr-x 3 ivan ivan 4096 Mar 13 11:55 vjezba4
+4 -rw-rw-r-- 1 ivan ivan  488 Mar 13 12:00 zadaci1.txt
+
+ivan@IT-Linux:~/Documents/os-vjezbe$ ls -lsh .
+total 24K
+4.0K drwxrwxr-x 2 ivan ivan 4.0K Mar 22 19:05 backup
+4.0K drwxrwxr-x 2 ivan ivan 4.0K Mar 22 18:52 data
+4.0K drwxrwxr-x 2 ivan ivan 4.0K Mar 13 11:39 vjezba1
+4.0K drwxrwxr-x 2 ivan ivan 4.0K Mar 20 10:47 vjezba2
+4.0K drwxrwxr-x 3 ivan ivan 4.0K Mar 13 11:55 vjezba4
+4.0K -rw-rw-r-- 1 ivan ivan  488 Mar 13 12:00 zadaci1.txt
+
+ivan@IT-Linux:~/Documents/os-vjezbe$ tree -a
+.
+├── backup
+│   ├── prezentacija.odp
+│   ├── salabahter.txt
+│   ├── .skriveni_dokument.exe
+│   └── zadaca.js
+├── data
+│   ├── prezentacija.odp
+│   ├── salabahter.txt
+│   ├── .skriveni_dokument.exe
+│   └── zadaca.js
+├── .programiranje.md
+├── vjezba1
+│   └── README.md
+├── vjezba2
+├── vjezba4
+│   └── subfolder
+└── zadaci1.txt
+
